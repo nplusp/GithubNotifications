@@ -1,0 +1,7 @@
+task :deploy do
+  system 'rm -Rf vendor'
+  if system 'bundle install --deployment --without test development'
+    system 'sls deploy'
+    system 'bundle install --no-deployment --with test development'
+  end
+end
