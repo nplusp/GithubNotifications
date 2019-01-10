@@ -29,6 +29,7 @@ Total commits: 2
 0 files deleted
 1 files modified
 
+
 ')
     end
   end
